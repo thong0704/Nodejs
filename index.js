@@ -8,6 +8,8 @@ const port = process.env.PORT;
 
 app.set("views", "./views");
 app.set("view engine", "pug");
+// Đi vào thư mục public chứa các file tỉnh
+app.use(express.static("public"));
 
 route(app);
 
